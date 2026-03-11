@@ -13,9 +13,9 @@ name: "CodeQL Advanced"
 
 on:
   push:
-    branches: [ "copilot/link-with-subbase" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "copilot/link-with-subbase" ]
+    branches: [ "main" ]
   schedule:
     - cron: '26 23 * * 2'
 
