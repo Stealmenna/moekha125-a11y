@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.91.0",
-    "@vitejs/plugin-react": "^4.7.0",
+    "@vitejs/plugin-react": "^5.1.4",
     "@web3modal/ethers5": "^5.1.11",
     "autoprefixer": "^10.4.14",
     "esbuild": "^0.27.3",
