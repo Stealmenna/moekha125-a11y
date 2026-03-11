@@ -89,9 +89,8 @@ export default function Login({ onLogin }) {
               <button 
                 onClick={async () => {
                   try {
-                    const res = await fetch('https://moekha125-a11y.onrender.com/api/health');
-                    const data = await res.json();
-                    alert(`Connection Test: ${res.ok ? 'SUCCESS' : 'FAILED'} - ${JSON.stringify(data)}`);
+                    const data = await authAPI.checkHealth();
+                    alert(`Connection Test: ${data.status === 'ok' ? 'SUCCESS' : 'FAILED'} - ${JSON.stringify(data)}`);
                   } catch (e) {
                     alert(`Connection Test: ERROR - ${e.message}`);
                   }
