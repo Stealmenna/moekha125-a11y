@@ -90,7 +90,7 @@ export default function Login({ onLogin }) {
                 onClick={async () => {
                   try {
                     const data = await authAPI.checkHealth();
-                    alert(`Connection Test: ${data.status !== 'offline' ? 'SUCCESS' : 'FAILED'} - ${JSON.stringify(data)}`);
+                    alert(`Connection Test: ${data.status === 'ok' ? 'SUCCESS' : 'FAILED'} - ${JSON.stringify(data)}`);
                   } catch (e) {
                     alert(`Connection Test: ERROR - ${e.message}`);
                   }
